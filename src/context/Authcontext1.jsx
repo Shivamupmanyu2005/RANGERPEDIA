@@ -32,7 +32,7 @@ export const AuthProvider = ({children}) => {
 
     const handleUserLogin = async(e, credentials) => {
         e.preventDefault();
-        // console.log("CREDS:", credentials);
+        
         try {
             let response = await account.createEmailPasswordSession(
                 credentials.email,
